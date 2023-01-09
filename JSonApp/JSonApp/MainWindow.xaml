@@ -1,0 +1,38 @@
+﻿<Window x:Class="JSonApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:JSonApp"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="0.25*"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <TabControl x:Name="tbcCustomerProduct" TabStripPlacement="Left" Grid.Row="1">
+            <TabItem Header="NEW">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="0.3*"/>
+                        <RowDefinition Height="0.5*"/>
+                        <RowDefinition Height="0.2*"/>
+                    </Grid.RowDefinitions>
+                    <Label x:Name="lblId" Content="ID" VerticalAlignment="Center" FontSize="20"/>
+           
+                    <TextBox x:Name="txtId" VerticalAlignment="Center" Height="20" Width="50" HorizontalAlignment="Left"/>
+                    <Label x:Name="lblName" Content="Name" VerticalAlignment="Center" FontSize="20"/>
+            
+                    <TextBox x:Name="txtName" VerticalAlignment="Center" Height="20" Width="50" HorizontalAlignment="Left"/>
+                    <Label x:Name="lblAge" Content="Age" VerticalAlignment="Center" FontSize="20"/>
+    
+                    <TextBox x:Name="txtAge" VerticalAlignment="Center" Height="20" Width="50" HorizontalAlignment="Left"/>
+                </Grid>
+            </TabItem>
+            <TabItem Header="Customer Product">
+                
+            </TabItem>
+        </TabControl>
+    </Grid>
+</Window>

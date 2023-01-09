@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "k5nGIhw9lQkXt+V0IJnXM6pMi1BKY9rSc47/OQTPNK1+YA/k5snwe5AeZe/D1mDHFScTBYA3n7qcDo5dKh7mmw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\INFORMATICA\\source\\repos\\JSonApp\\JSonApp\\JSonApp.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\INFORMATICA\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512",
+    "C:\\Users\\INFORMATICA\\.nuget\\packages\\system.text.encodings.web\\7.0.0\\system.text.encodings.web.7.0.0.nupkg.sha512",
+    "C:\\Users\\INFORMATICA\\.nuget\\packages\\system.text.json\\7.0.1\\system.text.json.7.0.1.nupkg.sha512"
+  ],
+  "logs": []
+}
