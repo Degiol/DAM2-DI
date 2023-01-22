@@ -1,0 +1,4 @@
+C:\Users\diene\source\repos\LeagueOfLegends\bin\Debug\netcoreapp3.1\LeagueOfLegends.exe
+C:\Users\diene\source\repos\LeagueOfLegends\obj\Debug\netcoreapp3.1\LeagueOfLegends.csprojAssemblyReference.cache
+C:\Users\diene\source\repos\LeagueOfLegends\obj\Debug\netcoreapp3.1\LeagueOfLegends.AssemblyInfoInputs.cache
+C:\Users\diene\source\repos\LeagueOfLegends\obj\Debug\netcoreapp3.1\LeagueOfLegends.AssemblyInfo.cs
