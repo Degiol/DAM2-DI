@@ -1,0 +1,74 @@
+﻿<Window x:Class="Hito3.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Hito3"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <TabControl TabStripPlacement="Left">
+            <TabItem Header="Player">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="0.6*"/>
+                        <ColumnDefinition Width="0.4*"/>
+                    </Grid.ColumnDefinitions>
+                    <DataGrid x:Name="dtgPlayers" Margin="0,100,0,40" Grid.Column="0">
+
+                    </DataGrid>
+                    <ComboBox Grid.Column="1" Margin="128,284,10,102"/>
+                    <ComboBox Grid.Column="1" Margin="128,376,10,10"/>
+                    <ComboBox Grid.Column="1" Margin="128,330,10,56"/>
+                    <ComboBox Grid.Column="1" Margin="128,238,10,148"/>
+                    <TextBox Grid.Column="1" Margin="128,192,10,194"/>
+                    <TextBox Grid.Column="1" Margin="128,146,10,240"/>
+                    <TextBox Grid.Column="1" Margin="128,100,10,286"/>
+                    <Label x:Name="lblNickname" Content="Nickname" Grid.Column="1" HorizontalAlignment="Left" Margin="5,103,0,0" VerticalAlignment="Top"/>
+                    <Label Grid.Column="1" Content="Name" HorizontalAlignment="Left" Margin="5,149,0,0" VerticalAlignment="Top"/>
+                    <Label Content="Surname" HorizontalAlignment="Left" Margin="5,196,0,0" VerticalAlignment="Top" Grid.Column="1"/>
+                    <Label Grid.Column="1" Content="Role" HorizontalAlignment="Left" Margin="5,246,0,0" VerticalAlignment="Top"/>
+                    <Label Grid.Column="1" Content="Type" HorizontalAlignment="Left" Margin="5,292,0,0" VerticalAlignment="Top"/>
+                    <Label Grid.Column="1" Content="Team" HorizontalAlignment="Left" Margin="5,333,0,0" VerticalAlignment="Top"/>
+                    <Label Grid.Column="1" Content="Country" HorizontalAlignment="Left" Margin="5,384,0,0" VerticalAlignment="Top"/>
+                    <Button x:Name="btnSavePlayer" Grid.Column="1" Content="Save" FontSize="20" HorizontalAlignment="Left" Margin="236,10,0,0" VerticalAlignment="Top" Height="40" Width="44"/>
+                    <Button x:Name="btnAddPlayer"  Content="ADD" FontSize="16" HorizontalAlignment="Left" Margin="10,30,0,0" VerticalAlignment="Top" Height="40" Width="70"/>
+                    <Button x:Name="btnModifyPlayer" Content="MODIFY" FontSize="16" HorizontalAlignment="Left" Margin="175,30,0,0" VerticalAlignment="Top" Height="40" Width="70"/>
+                    <Button x:Name="btnDeletePlayer" Content="DELETE"  FontSize="16" HorizontalAlignment="Left" Margin="354,30,0,0" VerticalAlignment="Top" Height="40" Width="70"/>
+                </Grid>
+            </TabItem>
+            <TabItem Header="Team">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="0.6*"/>
+                        <ColumnDefinition Width="0.4*"/>
+                    </Grid.ColumnDefinitions>
+                    <DataGrid x:Name="dtgPlayers_Copy" Margin="0,100,0,40" Grid.Column="0"/>
+                    <Button x:Name="btnAddTeam" Content="ADD" FontSize="16" HorizontalAlignment="Left" Margin="10,30,0,0" VerticalAlignment="Top" Height="40" Width="70"/>
+                    <Button x:Name="btnModifyTeam" Content="MODIFY" FontSize="16" HorizontalAlignment="Left" Margin="175,30,0,0" VerticalAlignment="Top" Height="40" Width="70"/>
+                    <Button x:Name="btnDelteTeam" Content="DELETE"  FontSize="16" HorizontalAlignment="Left" Margin="354,30,0,0" VerticalAlignment="Top" Height="40" Width="70"/>
+                    <TextBox Grid.Column="1" Margin="128,146,10,240"/>
+                    <Label Grid.Column="1" Content="Name" HorizontalAlignment="Left" Margin="5,149,0,0" VerticalAlignment="Top"/>
+                    <Button x:Name="btnSaveTeam" Grid.Column="1" Content="Save" FontSize="20" HorizontalAlignment="Left" Margin="236,10,0,0" VerticalAlignment="Top" Height="40" Width="44"/>
+                </Grid>
+            </TabItem>
+            <TabItem Header="Simulation">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="0.4*"/>
+                        <ColumnDefinition Width="0.6*"/>
+                    </Grid.ColumnDefinitions>
+                    <DataGrid x:Name="dgTournaments" Grid.Column="0" Margin="0,100,0,40">
+
+                    </DataGrid>
+                    <Label Content="Tournaments" Grid.Column="0" Height="40" Grid.ColumnSpan="2" Margin="0,60,434,328"/>
+                    <TextBox Grid.Column="1" Height="50" Margin="150,0,0,0"/>
+                    <TextBox Grid.Column="1" Height="50" Margin="150,105,100,273"/>
+                    <Label Content="Tournament" FontSize="20" Grid.Column="1" Height="50" Margin="10,189,289,189"/>
+                    <Label Content="Year" FontSize="20" Grid.Column="1" Height="50" Margin="10,105,289,273"/>
+                    <Button Grid.Column="1" Content="CREATE" FontSize="20" HorizontalAlignment="Left" Margin="172,263,0,0" VerticalAlignment="Top" Height="43" Width="85"/>
+                </Grid>
+            </TabItem>
+        </TabControl>
+    </Grid>
+</Window>
